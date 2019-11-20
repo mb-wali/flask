@@ -1,5 +1,11 @@
-FROM ubuntu:16.04
+FROM python:3.6
 
-RUN apt-get update && apt-get install -y python3-pip
+COPY . /app
 
-ENTRYPOINT ["python3" , "app.py" ]
+WORKDIR /app
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT ["python"]
+
+CMD ["app.py"]
