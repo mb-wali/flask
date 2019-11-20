@@ -11,6 +11,10 @@ docker build -t flask:latest .
 
 ```
 docker run -d -p 5000:5000 flask:latest
+
+OR
+
+docker run -d -p 80:5000 isds/flask:latest
 ```
 
 ## change the tag
