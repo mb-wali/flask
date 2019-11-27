@@ -7,13 +7,13 @@ Cyverse Discovery Environment on Cyverse Austria workshop 18 -22 Nov, 2019.
 ## Build
 
 ```
-docker build -t flask:version .
+docker build -t isds/flask:version .
 ```
 
 ## Run Development
 
 ```
-docker run -d -p 5000:80 flask:latest
+docker run -d -p 5000:80 isds/flask:version
 
 ```
 
@@ -36,7 +36,7 @@ docker tag 8e0bac7d04b3 isds/flask:version
 > run docker images, look for your renamed tag and push
 
 ```
-docker push isds/flask:latest
+docker push isds/flask:version
 ```
 
 ## Docker Container
